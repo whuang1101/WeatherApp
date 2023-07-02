@@ -1,4 +1,4 @@
-.day-format{
+.day-format,.hour-format{
     display: flex;
     flex-direction: column ;
     gap:2em;

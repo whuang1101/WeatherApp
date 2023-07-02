@@ -8,7 +8,7 @@ async function getWeather(city, cOrF) {
   try {
     const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e1afda1b14e34000baa164819233006&q=${city}`, { mode: 'cors' });
     const responseJson = await response.json();
-    const forecastAPI = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e1afda1b14e34000baa164819233006&q=${city}&days=10&aqi=no&alerts=no`, { mode: 'cors' });
+    const forecastAPI = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e1afda1b14e34000baa164819233006&q=${city}&days=10&aqi=no&alerts=no`, { mode: 'cors' });
     const forecastAPIJson = await forecastAPI.json();
     if (!response.ok || !forecastAPI.ok) {
       const searchError = document.querySelector('.error-text');
