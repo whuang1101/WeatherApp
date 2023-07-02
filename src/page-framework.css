@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: 'MyFont';
+  src: url('./Poppins/Poppins-Light.ttf') format('truetype');
+  font-style: normal;
+}
+
+
+* {
+    margin: 0px;
+    font-family: Montserrat,  "MyFont";
+    font-weight: 500;
+  }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media (max-width: 1700px) {
+    font-size: 56.25%;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 40%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: url('./new_background.jpeg');
+  background-size: cover;
+  box-sizing: border-box;
+  padding:6em;
+}
+
+.container {
+  height: calc(100vh - 16em);
+  display: grid;
+  grid-template-columns: 1fr 2.9fr 1fr;
+  grid-template-rows: 1.8fr 1fr;
+  position: relative;
+}
+
+.place-info {
+  flex-shrink: 1;
+  color: white;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+  font-size: 1.em;
+}
+
+.weather-stats {
+  flex-shrink: .5;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  row-gap: 2em;
+  font-size: 1em;
+}
+
+.hourly-and-daily {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.github-logo {
+  position:absolute;
+  color: white;
+  bottom: .1em;
+  font-size: 2em;
+}
+
+.error-text {
+  color: red;
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.day-hour-switch{
+  display: flex;
+  font-size: 1.5em;
+  flex: 1;
+  gap: 1em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+.daily-switch, .hourly-switch{
+  padding: .5em;
+  font-size: 3em;
+  border-bottom: 1px solid white;
+}
+.daily{
+  flex : 5;
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  gap:5em;
+}
+

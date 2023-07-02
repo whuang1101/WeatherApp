@@ -1,0 +1,23 @@
+.day-format{
+    display: flex;
+    flex-direction: column ;
+    gap:2em;
+}
+.day-of-week {
+    font-size: 2.5em;
+}
+.temperature-low-high{
+    display: flex;
+    flex-direction: column;
+    gap: .5em
+}
+.temp-high {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.temp-low {
+    font-size: 1.2em;
+}
+.weather-icon{
+    width: 100px;
+}

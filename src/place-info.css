@@ -1,0 +1,42 @@
+.place {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+}
+.weather-status {
+    font-size: 4em;
+}
+.times {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.place-time {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+.temperature {
+    font-size: 5em;
+    font-weight: 700;
+}
+.change-temperature {
+    font-size: 1.2em;
+}
+.weather-icon {
+    height: 8em;
+    width: 8em;
+}
+.search-location {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 10em;
+    padding-left: 1em;
+}
+#city-search, #city-search::-webkit-input-placeholder{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}

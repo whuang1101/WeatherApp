@@ -1,0 +1,21 @@
+.feels, .humidity,.chance-of-rain, .wind-speed{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    color: white;
+    column-gap: 1.2em;
+}
+.feel-icon, .humidity-icon, .rain-chance-icon, .wind-speed-icon {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.feels-like, .humidity-text, .rain-chance-text, .wind-speed-text{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 2em;
+}
+.feels-like-temp, .humidity-number, .rain-chance-number, .wind-speed-number {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 3em;
+}
